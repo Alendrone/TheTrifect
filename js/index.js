@@ -109,19 +109,19 @@ items[nth - 1] = root.getElementsByClassName(name[nth - 1])[0];
 }
 items[0].addEventListener("click", throttle(function (e) {
 active_slot = items[0];
-routeTo("home");
+//routeTo("home");
 menu.val = 0;
 items[2].style.inset = "0";
 items[1].style.inset = "0";
 items[0].style.inset = "3.625em -.625em";
 },4096));
 items[1].addEventListener("click",throttle(function (e) {
-routeTo("support");
+//routeTo("support");
 active_slot = items[1]
 press(1);
 },3072));
 items[2].addEventListener("click",throttle(function (e) {
-routeTo("episodes");
+//routeTo("episodes");
 active_slot = items[2];
 press(2);
 },2048));
