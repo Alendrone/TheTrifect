@@ -30,10 +30,10 @@ const routeTo = (name = 'home', args = []) => {
       history.replaceState(null, '', './');
     }
     else
-      location.hash = `/${name}`;
+      location.hash = `${name}`;
   }
   else
-    location.hash = `/${name}/${args.join('/')}`;
+    location.hash = `${name}/${args.join('/')}`;
 };
 window.Route = Route;
 window.routeTo = routeTo;
