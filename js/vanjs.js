@@ -83,7 +83,6 @@ function ux() {
           playsinline: 1,
           controls: 0,
           iv_load_policy: 3,
-          origin: "https://fews.tube",
           rel: 0,
           loop: 1
         }
