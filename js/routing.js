@@ -1,4 +1,4 @@
-const { div } = van.tags;
+//const { div } = van.tags;
 const nowRoute = () => {
   const li = location.hash.split('/');
   const route = { name: li[1] ?? 'home', args: li.slice(2) };
