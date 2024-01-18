@@ -60,7 +60,7 @@ function ux() {
     van.add(base, div({ class: "text-danger" }, "No episodes yet"));
     van.add(base, div({ id: "ytb", class: "vid" }));
     var ytb = base.getElementsByClassName("vid")[0];
-    ytb.dataset["youtubeId"] = "_KDUICa4UCM";
+    ytb.dataset["youtubeId"] = "Eg7JfLZM5PU";
     var player = new Vlitejs(ytb, {
       options: {
         controls: true,
