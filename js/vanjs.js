@@ -62,6 +62,7 @@ function ux() {
     van.add(base, div({ id: "ytb", class: "vid" }));
     var ytb = base.getElementsByClassName("vid")[0];
     ytb.dataset["youtubeId"] = "Eg7JfLZM5PU";
+    var thumb = "https://i3.ytimg.com/vi/" + ytb.dataset["youtubeId"] + "/maxresdefault.jpg";
     var player = new Vlitejs(ytb, {
       options: {
         controls: true,
@@ -71,7 +72,7 @@ function ux() {
         time: true,
         volume: true,
         fullscreen: true,
-        poster: "https://i3.ytimg.com/vi/" + ytb.dataset["youtubeId"] + "/maxresdefault.jpg",
+        poster: thumb,
         bigPlay: true,
         playsinline: true,
         loop: true,
