@@ -155,7 +155,7 @@ span {
   width: 1em;
   height: auto;
   margin-top: .1em;
-  filter: url("index.html#drop-shadow") url("index.html#cast-shadow");
+  filter: url("#drop-shadow") url("#cast-shadow");
 }
 
 .svg {
