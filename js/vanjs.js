@@ -106,7 +106,6 @@ function Page() {
 van.add(view, Page);
 
 van.derive(function() {
-  console.log(window.VlitejsYoutubeQueue);
   if (evnt) playback.removeEventListener(evnt);
   van.hydrate(view, Page);
 });
