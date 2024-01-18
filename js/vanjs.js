@@ -25,7 +25,6 @@ function ux() {
     br = frag("br"),
     b = frag("b"),
     p = frag("p"),
-    iframe = frag("iframe"),
     h1 = frag("h1"),
     stripe = frag("stripe-buy-button"),
     audio = frag("audio"),
