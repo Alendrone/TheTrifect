@@ -1,7 +1,7 @@
 //const { div } = van.tags;
 const nowRoute = () => {
   const li = location.hash.split('/');
-  const route = { name: li[1] ?? 'home', args: li.slice(2) };
+  const route = { name: li[0] ?? 'home', args: li.slice(1) };
   return route;
 };
 const activeRoute = van.state(nowRoute());
