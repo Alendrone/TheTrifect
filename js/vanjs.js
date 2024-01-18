@@ -66,7 +66,7 @@ function ux() {
       van.add(base,iframe({width:"100%",height:"100%",src:"https://www.youtube-nocookie.com/embed/" + ytb.dataset["youtubeId"] + "?autoplay=1&cc_load_policy=3&controls=0&disablekb=1&end=60&loop=1&modestbranding=1&playsinline=1&rel=0",frameborder:"0",allow:"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"}));
       return base;
     }
-    var player = new Vlitejs("#ytb", {
+    var player = new Vlitejs(ytb, {
       options: {
         controls: true,
         autoplay: true,
@@ -98,7 +98,7 @@ function ux() {
       },
       provider:"youtube"
     });
-    ++subcqint;
+    subcqint = 1;
     return base;
   };
   //var after = base.getElementsByClassName("card")[0].firstElementChild;
