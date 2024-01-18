@@ -70,7 +70,7 @@ function ux() {
         time: true,
         volume: true,
         fullscreen: true,
-        poster: "https://i3.ytimg.com/vi/" + proxy.dataset["youtubeId"] + "/maxresdefault.jpg",
+        poster: "https://i3.ytimg.com/vi/" + ytb.dataset["youtubeId"] + "/maxresdefault.jpg",
         bigPlay: true,
         playsinline: true,
         loop: true,
