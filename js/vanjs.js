@@ -4,7 +4,6 @@ var van = this.van,
   view = document.getElementById("app"),
   loadr = document.getElementById("loader"),
   proxy,
-  old,
   evnt,
   playback;
 function frag(name) {
@@ -63,9 +62,7 @@ function ux() {
     van.add(base, div({ id: "ytb", class: "vid" }));
     var ytb = base.getElementsByClassName("vid")[0];
     ytb.dataset["youtubeId"] = "Eg7JfLZM5PU";
-    old = ytb;
-    proxy = old.cloneNode(true);
-    old = proxy.cloneNode(true);
+    proxy = ytb.cloneNode(true);
     var player = new Vlitejs(proxy, {
       options: {
         controls: true,
