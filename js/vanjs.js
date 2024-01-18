@@ -100,8 +100,8 @@ function ux() {
 }
 
 function Page() {
-return div({ id: "app", class: "encloser" }, Route({"name":["home","support","episodes"][menu.val]},ux));
-  //return div({ id: "app", class: "encloser" }, ux);
+//return div({ id: "app", class: "encloser" }, Route({"name":["home","support","episodes"][menu.val]},ux));
+return div({ id: "app", class: "encloser" }, ux);
 }
 van.add(view, Page);
 
