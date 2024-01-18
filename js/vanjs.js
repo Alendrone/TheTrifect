@@ -96,7 +96,7 @@ function ux() {
         p.play();
         p.unMute();
       },
-      provider:["youtube","html5"]
+      provider:"youtube"
     });
     ++subcqint;
     return base;
