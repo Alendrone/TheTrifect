@@ -63,7 +63,7 @@ function ux() {
     var ytb = base.getElementsByClassName("vid")[0];
     ytb.dataset["youtubeId"] = "Eg7JfLZM5PU";
     if (subcqint) {
-      van.add(ytb,iframe({width:"100%",height:"100%",src:"https://www.youtube-nocookie.com/embed/" + ytb.dataset["youtubeId"] + "?autoplay=1&cc_load_policy=1&controls=0&disablekb=1&end=60&loop=1&modestbranding=1&playlist=PKtnafFtfEo&playsinline=1&rel=0",frameborder:0,allow:"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"}));
+      van.add(ytb,iframe({width:"100%",height:"100%",src:"https://www.youtube-nocookie.com/embed/" + ytb.dataset["youtubeId"] + "?autoplay=1&cc_load_policy=3&controls=0&disablekb=1&end=60&loop=1&modestbranding=1&playlist=PKtnafFtfEo&playsinline=1&rel=0",frameborder:0,allow:"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"}));
       return base;
     }
     var player = new Vlitejs(ytb, {
