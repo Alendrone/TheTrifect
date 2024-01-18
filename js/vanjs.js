@@ -3,7 +3,6 @@ var van = this.van,
   menu = van.state(0),
   view = document.getElementById("app"),
   loadr = document.getElementById("loader"),
-  subcqint = 0,
   evnt,
   playback;
 function frag(name) {
@@ -95,7 +94,6 @@ function ux() {
       },
       provider:"youtube"
     });
-    subcqint = 1;
     return base;
   };
   //var after = base.getElementsByClassName("card")[0].firstElementChild;
