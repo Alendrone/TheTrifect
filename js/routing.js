@@ -1,1 +1,39 @@
-const{div:e}=this.van.tags,nowRoute=()=>{let e=location.hash.split("/"),t={name:e[1]??"home",args:e.slice(2)};return t},activeRoute=van.state(nowRoute());window.addEventListener("hashchange",()=>{activeRoute.val=nowRoute()});const Route=(t,...o)=>{let{name:a,onFirst:n,onLoad:u,...h}=t,s=!0;return van.derive(()=>{activeRoute.val.name==t.name&&(s&&t.onFirst&&(t.onFirst(activeRoute.val),s=!1),t.onLoad&&t.onLoad(activeRoute.val))}),e({hidden:()=>t.name!=activeRoute.val.name,...h},o)},routeTo=(e="home",t=[])=>{0==t.length?"home"==e?(location.hash="",history.replaceState(null,"","./")):location.hash=`/${e}`:location.hash=`/${e}/${t.join("/")}`};window.Route=Route,window.routeTo=routeTo;
+const { div } = van.tags;
+const nowRoute = () => {
+  const li = location.hash.split('/');
+  const route = { name: li[1] ?? 'home', args: li.slice(2) };
+  return route;
+};
+const activeRoute = van.state(nowRoute());
+window.addEventListener('hashchange', () => {
+  activeRoute.val = nowRoute();
+});
+const Route = (first, ...rest) => {
+  const { name, onFirst, onLoad, ...otherProp } = first;
+  let firstLoad = true;
+  van.derive(() => {
+    if (activeRoute.val.name == first.name) {
+      if (firstLoad && first.onFirst) {
+        first.onFirst(activeRoute.val);
+        firstLoad = false;
+      }
+      if (first.onLoad)
+        first.onLoad(activeRoute.val);
+    }
+  });
+  return div({ hidden: () => first.name != activeRoute.val.name, ...otherProp }, rest);
+};
+const routeTo = (name = 'home', args = []) => {
+  if (args.length == 0) {
+    if (name == 'home') {
+      location.hash = '';
+      history.replaceState(null, '', './');
+    }
+    else
+      location.hash = `/${name}`;
+  }
+  else
+    location.hash = `/${name}/${args.join('/')}`;
+};
+window.Route = Route;
+window.routeTo = routeTo;
