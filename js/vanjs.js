@@ -3,7 +3,6 @@ var van = this.van,
   menu = van.state(0),
   view = document.getElementById("app"),
   loadr = document.getElementById("loader"),
-  proxy,
   evnt,
   playback;
 function frag(name) {
@@ -62,8 +61,7 @@ function ux() {
     van.add(base, div({ id: "ytb", class: "vid" }));
     var ytb = base.getElementsByClassName("vid")[0];
     ytb.dataset["youtubeId"] = "Eg7JfLZM5PU";
-    proxy = ytb.cloneNode(true);
-    var player = new Vlitejs(proxy, {
+    var player = new Vlitejs(ytb, {
       options: {
         controls: true,
         autoplay: true,
