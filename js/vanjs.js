@@ -95,6 +95,7 @@ function ux() {
       },
       provider:"youtube"
     });
+    if (subcqint) player.loading(false)
     subcqint = 1;
     return base;
   };
