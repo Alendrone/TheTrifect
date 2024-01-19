@@ -94,9 +94,9 @@ function ux() {
       },
       provider:"youtube"
     });
-    var video = document.getElementsByClassName("v-media")[0].parentNode,
-        elem = iframe({id:"ytb",class:"vid v-media","data-youtube-id":"_KDUICa4UCM",frameborder:"0",allowfullscreen:"",allow:"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",title:"&quot;Structural Integrity&quot; | The Trifect #shorts_video",width:"480",height:"640",src:"https://www.youtube.com/embed/_KDUICa4UCM?autohide=1&amp;controls=0&amp;fs=1&amp;modestbranding=0&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;wmode=transparent&amp;autoplay=1&amp;start=0&amp;end=60&amp;iv_load_policy=3&amp;loop=1&amp;enablejsapi=1&amp;widgetid=1" ,tabindex:"-1"});
-   video.innerHTML = elem;
+    //var video = document.getElementsByClassName("v-media")[0].parentNode,
+      //elem = iframe({id:"ytb",class:"vid v-media","data-youtube-id":"_KDUICa4UCM",frameborder:"0",allowfullscreen:"",allow:"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",title:"&quot;Structural Integrity&quot; | The Trifect #shorts_video",width:"480",height:"640",src:"https://www.youtube.com/embed/_KDUICa4UCM?autohide=1&amp;controls=0&amp;fs=1&amp;modestbranding=0&amp;playsinline=1&amp;rel=0&amp;showinfo=0&amp;wmode=transparent&amp;autoplay=1&amp;start=0&amp;end=60&amp;iv_load_policy=3&amp;loop=1&amp;enablejsapi=1&amp;widgetid=1" ,tabindex:"-1"});
+   //video.innerHTML = elem;
     return base;
   };
   //var after = base.getElementsByClassName("card")[0].firstElementChild;
