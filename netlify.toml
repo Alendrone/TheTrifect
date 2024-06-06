@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/wyvern"
+  to = "https://linktr.ee/wyvern_works"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/dr"
+  to = "https://www.youtube.com/@sadhippostudios?sub_confirmation=1"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/legend"
+  to = "https://www.youtube.com/@crimsonlegend?sub_confirmation=1"
+  status = 302
+  force = true
